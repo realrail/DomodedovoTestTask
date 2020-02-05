@@ -17,8 +17,8 @@ public class UserServiceImpl implements UserService {
         this.repository = repository;
     }
 
-    public User getById(Long id) {
-        return repository.getById(id);
+    public User findById(Long id) {
+        return repository.findById(id).get();
     }
 
     @Override

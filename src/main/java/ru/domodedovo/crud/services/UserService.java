@@ -7,7 +7,7 @@ import java.util.List;
 
 @Service
 public interface UserService {
-    User getById(Long id);
+    User findById(Long id);
 
     void save(User user);
 

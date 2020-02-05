@@ -1,3 +1,7 @@
+drop table if exists task;
+drop table if exists project;
+drop table if exists user;
+
 create table user
 (
   id int AUTO_INCREMENT PRIMARY KEY,

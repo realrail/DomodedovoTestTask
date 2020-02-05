@@ -23,8 +23,7 @@ public class UserCommand {
     public String getUser(@ShellOption({"--id"}) Long id, @ShellOption({"--all"}) boolean all) {
 
         if (id != null) {
-            User result = userService.getById(id);
-            List<User> users = userService.getAll();
+            User result = userService.findById(id);
             return result.toString();
         }
 

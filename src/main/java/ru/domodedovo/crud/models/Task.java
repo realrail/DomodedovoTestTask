@@ -1,8 +1,13 @@
 package ru.domodedovo.crud.models;
 
+import lombok.Data;
+
 import javax.persistence.*;
 import java.util.Date;
 
+@Data
+@Entity
+@Table(name = "task")
 public class Task {
 
     @Id

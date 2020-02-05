@@ -7,10 +7,10 @@ import javax.persistence.*;
 
 @Data
 @Entity
-@Table(name = "USER")
+@Table(name = "user")
 public class User {
     @Id
-    @Column(name = "Id", nullable = false)
+    @Column(name = "id", nullable = false)
     @GeneratedValue(strategy= GenerationType.AUTO)
     private Long id;
 
